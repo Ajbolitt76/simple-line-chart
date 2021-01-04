@@ -1,0 +1,44 @@
+[debug] [2021-01-03T16:38:54.292Z] ----------------------------------------------------------------------
+[debug] [2021-01-03T16:38:54.293Z] Command:       D:\nodejs\node.exe C:\Users\vsv11\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-03T16:38:54.294Z] CLI Version:   8.11.2
+[debug] [2021-01-03T16:38:54.294Z] Platform:      win32
+[debug] [2021-01-03T16:38:54.294Z] Node Version:  v14.4.0
+[debug] [2021-01-03T16:38:54.295Z] Time:          Sun Jan 03 2021 19:38:54 GMT+0300 (Москва, стандартное время)
+[debug] [2021-01-03T16:38:54.295Z] ----------------------------------------------------------------------
+[debug] [2021-01-03T16:38:54.295Z] 
+[debug] [2021-01-03T16:38:54.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-03T16:38:54.328Z] > authorizing via signed-in user
+[debug] [2021-01-03T16:38:54.328Z] [iam] checking project simple-line-chart for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-03T16:38:54.330Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-03T16:38:54.330Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-03T16:38:54.388Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-01-03T16:38:54.389Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-03T16:38:54.389Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-03T16:38:54.394Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-01-03T16:38:54.398Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\vsv11\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at Object.<anonymous> (C:\Users\vsv11\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:20:16)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at Object.<anonymous> (C:\Users\vsv11\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:7:22)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+[error] 
+[error] Error: Failed to get Firebase project simple-line-chart. Please make sure the project exists and your account has permission to access it.
